@@ -4,7 +4,7 @@ import ArrowCircleLeftTwoToneIcon from "@mui/icons-material/ArrowCircleLeftTwoTo
 import React from "react";
 
 const Boxstyle = {
-  height: "150px",
+  height: "200px",
   width: "100%",
   margin: "50px auto",
   borderRadius: "0 0 20px 20px ",
@@ -71,26 +71,7 @@ const Demo = () => {
         <Box sx={bigCircleRight}></Box>
         <Box sx={circleRight}></Box>
         <Box sx={circleLeft}></Box>
-        <Box sx={topicContent}>
-          <Typography
-            variant="h5"
-            fontWeight={"bold"}
-            color={"white"}
-            mt={1}
-            textTransform={"uppercase"}
-          >
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              sx={{ mr: 1 }}
-            >
-              <ArrowCircleLeftTwoToneIcon fontSize="large" />
-            </IconButton>
-            {"room"}
-          </Typography>
-        </Box>
+        <Box sx={topicContent}></Box>
       </Box>
     </>
   );

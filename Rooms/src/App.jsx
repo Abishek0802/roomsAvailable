@@ -1,9 +1,11 @@
-import Slide from "../src/Home/Slide.jsx";
+import Home from "./Assemble/Home.jsx";
+import Slide from "./Assemble/Slide.jsx";
 
 function App() {
   return (
     <>
-      <Slide />
+      <Home />
+      {/* <Slide /> */}
     </>
   );
 }
