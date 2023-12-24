@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import IconButton from "@mui/material/IconButton";
-import ArrowCircleLeftTwoToneIcon from "@mui/icons-material/ArrowCircleLeftTwoTone";
+
 import React from "react";
 
 const Boxstyle = {
@@ -63,7 +62,7 @@ const topicContent = {
   left: "45px",
 };
 
-const Demo = () => {
+const NavBar = () => {
   return (
     <>
       <Box sx={Boxstyle} position={"static"}>
@@ -77,4 +76,4 @@ const Demo = () => {
   );
 };
 
-export default Demo;
+export default NavBar;

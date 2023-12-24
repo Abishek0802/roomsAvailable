@@ -15,8 +15,7 @@ import ListItemText from "@mui/material/ListItemText";
 import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-
-import Nav from "./Nav.jsx";
+import NavBar from "./NavBar.jsx";
 
 const drawerWidth = 240;
 
@@ -126,7 +125,7 @@ function ResponsiveDrawer(props) {
           {drawer}
         </Drawer>
       </Box>
-      <Nav />
+      <NavBar />
     </Box>
   );
 }
