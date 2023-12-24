@@ -1,17 +1,11 @@
-import { useState } from 'react'
-import Demo from "./Demo.jsx"
-
+import Slide from "../src/Home/Slide.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-
-   
-     <Demo/>
+      <Slide />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

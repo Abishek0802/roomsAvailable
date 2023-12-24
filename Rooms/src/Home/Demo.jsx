@@ -1,6 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import ArrowCircleLeftTwoToneIcon from "@mui/icons-material/ArrowCircleLeftTwoTone";
+import React from "react";
+
 const Boxstyle = {
   height: "150px",
   width: "100%",
@@ -10,6 +12,7 @@ const Boxstyle = {
   backgroundImage: "linear-gradient(to bottom, #030327, #19906F)",
   position: "relative",
 };
+
 const circleRight = {
   position: "absolute",
   top: "50px",
@@ -20,6 +23,7 @@ const circleRight = {
   width: "350px",
   borderRadius: "50%",
 };
+
 const circleLeft = {
   position: "absolute",
   top: "-50px",
@@ -30,6 +34,7 @@ const circleLeft = {
   width: "400px",
   borderRadius: "60%",
 };
+
 const bigCircleLeft = {
   position: "absolute",
   top: "-40px",
@@ -40,6 +45,7 @@ const bigCircleLeft = {
   width: "700px",
   borderRadius: "60% 30%",
 };
+
 const bigCircleRight = {
   position: "absolute",
   top: "-20px",
@@ -50,23 +56,29 @@ const bigCircleRight = {
   width: "600px",
   borderRadius: "50%",
 };
+
 const topicContent = {
   position: "absolute",
   top: "25px",
   left: "45px",
 };
+
 const Demo = () => {
-
-
   return (
     <>
-      <Box sx={Boxstyle} position={'static'}>
+      <Box sx={Boxstyle} position={"static"}>
         <Box sx={bigCircleLeft}></Box>
         <Box sx={bigCircleRight}></Box>
         <Box sx={circleRight}></Box>
         <Box sx={circleLeft}></Box>
         <Box sx={topicContent}>
-          <Typography variant="h5" fontWeight={"bold"} color={"white"} mt={1} textTransform={'uppercase'}>
+          <Typography
+            variant="h5"
+            fontWeight={"bold"}
+            color={"white"}
+            mt={1}
+            textTransform={"uppercase"}
+          >
             <IconButton
               size="large"
               edge="start"
