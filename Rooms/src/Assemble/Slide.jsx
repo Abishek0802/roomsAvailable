@@ -1,11 +1,19 @@
 import React, { useEffect } from "react";
 import "./Slide.css";
-import { Paper } from "@mui/material";
-import Input1 from "./AddZoneInputs/Input-A.jsx";
-import Input2 from "./AddZoneInputs/Input-B.jsx";
-import Input3 from "./AddZoneInputs/Input-C.jsx";
-import Input4 from "./AddZoneInputs/Input-D.jsx";
-import Input5 from "./AddZoneInputs/Input-E.jsx";
+import Button from "@mui/material/Button";
+import ReplyIcon from "@mui/icons-material/Reply";
+import IconButton from "@mui/material/IconButton";
+import DeleteIcon from "@mui/icons-material/Delete";
+import AddInput1 from "./AddZoneInputs/AddInput-A.jsx";
+import AddInput2 from "./AddZoneInputs/AddInput-B.jsx";
+import AddInput3 from "./AddZoneInputs/AddInput-C.jsx";
+import AddInput4 from "./AddZoneInputs/AddInput-D.jsx";
+import AddInput5 from "./AddZoneInputs/AddInput-E.jsx";
+import EditInput1 from "./EditZoneInputs/EditInput-A.jsx";
+import EditInput2 from "./EditZoneInputs/EditInput-B.jsx";
+import EditInput3 from "./EditZoneInputs/EditInput-C.jsx";
+import EditInput4 from "./EditZoneInputs/EditInput-D.jsx";
+import EditInput5 from "./EditZoneInputs/EditInput-E.jsx";
 const SignInForm = () => {
   useEffect(() => {
     const loginText = document.querySelector(".title-text .login");
@@ -65,37 +73,126 @@ const SignInForm = () => {
               <div className="lable-input">
                 {" "}
                 <label htmlFor=""> select Zone</label>
-                <Input1 />
+                <AddInput1 />
               </div>
               <div
                 style={{ position: "relative", right: "10px" }}
                 className="lable-input"
               >
                 <label htmlFor=""> select Categery</label>
-                <Input2 />
+                <AddInput2 />
               </div>
               <div className="lable-input">
                 <label htmlFor=""> select Floor</label>
-                <Input3 />
+                <AddInput3 />
               </div>
               <div
-                style={{ position: "relative", right: "28px" }}
+                style={{ position: "relative", right: "20px" }}
                 className="lable-input"
               >
                 <label style={{ textAlign: "center" }} htmlFor="">
                   {" "}
-                  Number of rooms in floor
+                  Num of rooms in floor
                 </label>
-                <Input4 />
+                <AddInput4 />
               </div>
               <div className="lable-input">
                 {" "}
                 <label htmlFor=""> Zone Name</label>
-                <Input5 />
+                <AddInput5 />
+              </div>
+              <div className="button-one">
+                <Button
+                  size="large"
+                  style={{
+                    backgroundColor: "#19906F",
+                    color: "black",
+                    borderRadius: "20px",
+                  }}
+                >
+                  <ReplyIcon />
+                  Back
+                </Button>
+                <Button
+                  size="large"
+                  style={{
+                    backgroundColor: "#19906F",
+                    color: "black",
+                    borderRadius: "20px",
+                  }}
+                >
+                  Update
+                </Button>
               </div>
             </form>
+            {/* EditZone */}
             <form action="#" className="signup">
-              <div>content goes here</div>
+              <div className="lable-input">
+                {" "}
+                <label htmlFor=""> select Zone</label>
+                <EditInput1 />
+              </div>
+              <div
+                style={{ position: "relative", right: "10px" }}
+                className="lable-input"
+              >
+                <label htmlFor=""> select Categery</label>
+                <EditInput2 />
+              </div>
+              <div className="lable-input">
+                <label htmlFor=""> select Floor</label>
+                <EditInput3 />
+              </div>
+              <div
+                style={{ position: "relative", right: "20px" }}
+                className="lable-input"
+              >
+                <label
+                  style={{
+                    textAlign: "center",
+                  }}
+                  htmlFor=""
+                >
+                  {" "}
+                  Num of rooms in floor
+                </label>
+                <EditInput4 />
+              </div>
+              <div className="lable-input">
+                {" "}
+                <label htmlFor=""> Zone Name</label>
+                <EditInput5 />
+              </div>
+              <div className="button-one">
+                <Button
+                  size="large"
+                  style={{
+                    backgroundColor: "#19906F",
+                    color: "black",
+                    borderRadius: "20px",
+                  }}
+                >
+                  <ReplyIcon />
+                  Back
+                </Button>
+                <Button
+                  size="large"
+                  style={{
+                    backgroundColor: "#19906F",
+                    color: "black",
+                    borderRadius: "20px",
+                  }}
+                >
+                  Update
+                </Button>
+                <IconButton
+                  style={{ backgroundColor: "red", color: "black" }}
+                  size="larger"
+                  aria-label="delete"
+                >
+                  <DeleteIcon />
+                </IconButton>
+              </div>
             </form>
           </div>
         </div>
