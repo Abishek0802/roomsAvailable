@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+
+@media screen and (min-width: 390px) {
+  .profile {
+    position: relative;
+    left: 200px;
+  }
+}

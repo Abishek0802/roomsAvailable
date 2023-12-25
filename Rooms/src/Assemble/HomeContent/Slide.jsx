@@ -4,16 +4,16 @@ import Button from "@mui/material/Button";
 import ReplyIcon from "@mui/icons-material/Reply";
 import IconButton from "@mui/material/IconButton";
 import DeleteIcon from "@mui/icons-material/Delete";
-import AddInput1 from "./AddZoneInputs/AddInput-A.jsx";
-import AddInput2 from "./AddZoneInputs/AddInput-B.jsx";
-import AddInput3 from "./AddZoneInputs/AddInput-C.jsx";
-import AddInput4 from "./AddZoneInputs/AddInput-D.jsx";
-import AddInput5 from "./AddZoneInputs/AddInput-E.jsx";
-import EditInput1 from "./EditZoneInputs/EditInput-A.jsx";
-import EditInput2 from "./EditZoneInputs/EditInput-B.jsx";
-import EditInput3 from "./EditZoneInputs/EditInput-C.jsx";
-import EditInput4 from "./EditZoneInputs/EditInput-D.jsx";
-import EditInput5 from "./EditZoneInputs/EditInput-E.jsx";
+import AddInput1 from "../AddZoneInputs/AddInput-A.jsx";
+import AddInput2 from "../AddZoneInputs/AddInput-B.jsx";
+import AddInput3 from "../AddZoneInputs/AddInput-C.jsx";
+import AddInput4 from "../AddZoneInputs/AddInput-D.jsx";
+import AddInput5 from "../AddZoneInputs/AddInput-E.jsx";
+import EditInput1 from "../EditZoneInputs/EditInput-A.jsx";
+import EditInput2 from "../EditZoneInputs/EditInput-B.jsx";
+import EditInput3 from "../EditZoneInputs/EditInput-C.jsx";
+import EditInput4 from "../EditZoneInputs/EditInput-D.jsx";
+import EditInput5 from "../EditZoneInputs/EditInput-E.jsx";
 const SignInForm = () => {
   useEffect(() => {
     const loginText = document.querySelector(".title-text .login");
