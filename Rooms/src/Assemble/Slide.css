@@ -26,7 +26,7 @@ body {
   border-radius: 50px;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
   border: solid black;
-  background-color: #fc83bb;
+  background-color: #eaeaea;
   position: relative;
   bottom: 100px;
 }
@@ -36,6 +36,7 @@ body {
     position: relative;
     left: 50px;
     bottom: 100px;
+    padding-left: 60px;
   }
 }
 
@@ -60,7 +61,7 @@ body {
   overflow: hidden;
   margin: 30px 0 10px 0;
   justify-content: space-between;
-  border: 1px solid lightgrey;
+
   border-radius: 5px;
 }
 
@@ -87,7 +88,7 @@ body {
   width: 50%;
   left: 0;
   z-index: 0;
-  border-radius: 5px;
+  border-bottom: solid black;
   background: "white";
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -167,26 +168,6 @@ form .field input:focus::placeholder {
   color: #b3b3b3;
 }
 
-.form-inner form .pass-link {
-  margin-top: 5px;
-}
-
-.form-inner form .signup-link {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.form-inner form .pass-link a,
-.form-inner form .signup-link a {
-  color: #fa4299;
-  text-decoration: none;
-}
-
-.form-inner form .pass-link a:hover,
-.form-inner form .signup-link a:hover {
-  text-decoration: underline;
-}
-
 form .btn {
   height: 50px;
   width: 100%;
@@ -228,4 +209,14 @@ form .btn input[type="submit"] {
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+}
+.lable-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.login {
+  position: relative;
+  padding-left: 20px;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import "./NavBar.css";
 
 const Boxstyle = {
@@ -70,6 +70,18 @@ const NavBar = () => {
         <Box sx={circleRight}></Box>
         <Box sx={circleLeft}></Box>
         <Box sx={topicContent}></Box>
+        <Typography
+          style={{
+            fontFamily: '"Ubuntu", sans-serif',
+            color: "white",
+            textAlign: "center",
+            position: "relative",
+            top: "30%",
+          }}
+          variant="h3"
+        >
+          Rooms Available
+        </Typography>
       </Box>
     </>
   );

@@ -1,6 +1,11 @@
 import React, { useEffect } from "react";
 import "./Slide.css";
 import { Paper } from "@mui/material";
+import Input1 from "./AddZoneInputs/Input-A.jsx";
+import Input2 from "./AddZoneInputs/Input-B.jsx";
+import Input3 from "./AddZoneInputs/Input-C.jsx";
+import Input4 from "./AddZoneInputs/Input-D.jsx";
+import Input5 from "./AddZoneInputs/Input-E.jsx";
 const SignInForm = () => {
   useEffect(() => {
     const loginText = document.querySelector(".title-text .login");
@@ -26,12 +31,12 @@ const SignInForm = () => {
 
     signupBtn.addEventListener("click", handleSignupBtnClick);
     loginBtn.addEventListener("click", handleLoginBtnClick);
-    signupLink.addEventListener("click", handleSignupLinkClick);
+    // signupLink.addEventListener("click", handleSignupLinkClick);
 
     return () => {
       signupBtn.removeEventListener("click", handleSignupBtnClick);
       loginBtn.removeEventListener("click", handleLoginBtnClick);
-      signupLink.removeEventListener("click", handleSignupLinkClick);
+      // signupLink.removeEventListener("click", handleSignupLinkClick);
     };
   }, []);
 
@@ -57,41 +62,40 @@ const SignInForm = () => {
           </div>
           <div className="form-inner">
             <form action="#" className="login">
-              <div className="field">
-                <input type="text" placeholder="Email Address" required />
+              <div className="lable-input">
+                {" "}
+                <label htmlFor=""> select Zone</label>
+                <Input1 />
               </div>
-              <div className="field">
-                <input type="password" placeholder="Password" required />
+              <div
+                style={{ position: "relative", right: "10px" }}
+                className="lable-input"
+              >
+                <label htmlFor=""> select Categery</label>
+                <Input2 />
               </div>
-              <div className="pass-link">
-                <a href="#">Forgot password?</a>
+              <div className="lable-input">
+                <label htmlFor=""> select Floor</label>
+                <Input3 />
               </div>
-              <div className="field btn">
-                <div className="btn-layer"></div>
-                <input type="submit" value="Login" />
+              <div
+                style={{ position: "relative", right: "28px" }}
+                className="lable-input"
+              >
+                <label style={{ textAlign: "center" }} htmlFor="">
+                  {" "}
+                  Number of rooms in floor
+                </label>
+                <Input4 />
               </div>
-              <div className="signup-link">
-                Not a member? <a href="">Signup now</a>
+              <div className="lable-input">
+                {" "}
+                <label htmlFor=""> Zone Name</label>
+                <Input5 />
               </div>
             </form>
             <form action="#" className="signup">
-              <div className="field">
-                <input type="text" placeholder="Email Address" required />
-              </div>
-              <div className="field">
-                <input type="password" placeholder="Password" required />
-              </div>
-              <div className="field">
-                <input
-                  type="password"
-                  placeholder="Confirm password"
-                  required
-                />
-              </div>
-              <div className="field btn">
-                <div className="btn-layer"></div>
-                <input type="submit" value="Signup" />
-              </div>
+              <div>content goes here</div>
             </form>
           </div>
         </div>
