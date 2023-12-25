@@ -1,7 +1,5 @@
-import { Box, Typography } from "@mui/material";
-
 import React from "react";
-import "./NN.css";
+import { Box } from "@mui/material";
 
 const Boxstyle = {
   height: "200px",
@@ -11,9 +9,7 @@ const Boxstyle = {
   overflow: "hidden",
   backgroundImage: "linear-gradient(to bottom, #030327, #19906F)",
   position: "relative",
-  left,
 };
-
 const circleRight = {
   position: "absolute",
   top: "50px",
@@ -67,7 +63,7 @@ const topicContent = {
 const NavBar = () => {
   return (
     <>
-      <Box className="box-box" sx={Boxstyle} position={"static"}>
+      <Box sx={Boxstyle} position={"static"}>
         <Box sx={bigCircleLeft}></Box>
         <Box sx={bigCircleRight}></Box>
         <Box sx={circleRight}></Box>
