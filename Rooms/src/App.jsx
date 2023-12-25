@@ -5,9 +5,10 @@ import NavBar from "./Assemble/NavBar.jsx";
 function App() {
   return (
     <>
-      {/* <Home /> */}
-      {/* <Slide /> */}
-      <NavBar />
+      <Home />
+      {/* <NavBar />
+
+      <Slide /> */}
     </>
   );
 }

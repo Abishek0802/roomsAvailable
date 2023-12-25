@@ -1,5 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
+import "./NavBar.css";
 
 const Boxstyle = {
   height: "200px",

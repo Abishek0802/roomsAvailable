@@ -27,10 +27,15 @@ body {
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
   border: solid black;
   background-color: #fc83bb;
+  position: relative;
+  bottom: 100px;
 }
 @media screen and (min-width: 500px) {
   .wrapper {
-    width: 800px;
+    width: 1200px;
+    position: relative;
+    left: 50px;
+    bottom: 100px;
   }
 }
 

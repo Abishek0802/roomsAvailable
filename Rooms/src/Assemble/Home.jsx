@@ -16,6 +16,8 @@ import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import NavBar from "./NavBar.jsx";
+import Slider from "./Slide.jsx";
+import "./NavBar.css";
 const drawerWidth = 240;
 
 function ResponsiveDrawer(props) {
@@ -64,7 +66,7 @@ function ResponsiveDrawer(props) {
 
   return (
     <>
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: "flex", flexDirection: "column" }}>
         <AppBar
           position="fixed"
           sx={{
@@ -125,7 +127,10 @@ function ResponsiveDrawer(props) {
             {drawer}
           </Drawer>
         </Box>
-        <NavBar />
+        <Box className="box-box" sx={{}}>
+          <NavBar />
+          <Slider />
+        </Box>
       </Box>
     </>
   );
